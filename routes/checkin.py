@@ -8,7 +8,6 @@ class RoomRequest(BaseModel):
 
 @router.post("/checkin/room")
 def check_room(data: RoomRequest):
-    # This is where PMS lookup logic would go
     return {
         "room": data.room_number,
         "entitlement": {
